@@ -1,0 +1,47 @@
+.CustomerHome{
+    position: relative;
+    padding: 14vh 0px;   
+}
+.CustomerHome h1{
+    text-align: center;
+    font-size: 40px;
+}
+.genere-wrapper{
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.main-adminhome {
+    background: linear-gradient(to bottom right, rgb(26, 26, 26), black);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem;
+  }
+
+@media(max-width:650px){
+    .main-adminhome {
+        background: linear-gradient(to bottom right, rgb(26, 26, 26), black);
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        overflow-y: hidden;
+        padding: 10px 0;
+        gap: 10px; /* Space between cards */
+        /* scrollbar-width: thin; For Firefox, optional */
+        scrollbar-width: none;
+      }
+      
+      .col-3 {
+        flex: 0 0 auto; /* Prevent shrinking and ensure consistent width */
+        min-width: 200px; /* Set a minimum width for each card */
+        max-width: 300px; /* Optional, if you want to limit card size */
+        margin-right: 10px;
+        box-sizing: border-box;
+      }
+}

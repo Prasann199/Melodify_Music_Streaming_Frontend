@@ -1,0 +1,109 @@
+.Navbar{
+    width: 100%;
+    height: 20vh;
+    /* background-color: black; */
+    color: white;
+    position: fixed;
+    z-index: 15;
+    
+}
+.menu-options{
+    position: fixed;
+    width: 40vw;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    backdrop-filter: blur(15px);
+    right: 0%;
+    top: 0%;
+    transition: all ease 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    padding: 0px 1rem;
+}
+.left-header{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+}
+.left-header h1{
+    -webkit-text-stroke: 0.5px blue;
+    letter-spacing: 2px;
+}
+.right-header{
+    width: fit-content;
+    height: fit-content;
+}
+.right-header img{
+    width: 60px;
+    filter: invert(1);
+    z-index: 9;
+    margin-right: 2rem;
+}
+.menu-options button{
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+    /* background-color: black; */
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 600; 
+    border-radius: 50%;
+}
+.close-butn{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 5vw;
+}
+.nav-buttons{
+    width: 100%;
+    height: fit-content;
+    padding: 30px 7vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav-buttons button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: fit-content;
+    margin: 10px 0px;
+    /* font-family: Times, 'Times New Roman', serif; */
+}
+.nav-buttons .resp-btn {
+  font-size: 1.5rem; /* Default size */
+}
+
+@media (max-width: 992px) {
+  .nav-buttons .resp-btn {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-buttons .resp-btn {
+      font-size: 1.3rem;
+      /* border: 2px solid yellow; */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-buttons .resp-btn {
+      font-size: 1.2rem;
+      margin: 1rem 0px;
+  }
+}

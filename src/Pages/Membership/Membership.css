@@ -1,0 +1,14 @@
+.membership-form{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.membership-form [type="text"]{
+    width: 35%;
+    height: 2.2rem;
+    border-radius: 5px;
+    margin: 1rem 0px;
+    padding: 0.5rem;
+}

@@ -1,0 +1,40 @@
+.addsong{
+    width: 100%;
+    height: 100%;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.addsong form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(44, 43, 43);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.addsong form input{
+   width: 80%;
+   height: 35px;
+   font-size: 18px;
+   margin-top: 15px;
+   padding: 10px;
+}
+.addsong form .addsong-btn{
+    width: 40%;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+    background-color: rgb(2, 2, 222);
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all ease 0.4s;
+ }
+ .addsong form .addsong-btn:hover{
+    background-color: yellow;
+    color: black;
+ }

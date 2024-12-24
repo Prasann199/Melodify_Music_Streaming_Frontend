@@ -1,0 +1,50 @@
+.ViewSong{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    /* margin-top: 10vh; */
+}
+.viewsong-first{
+    padding-top: 10vw;
+}
+.songs-container{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right top,rgb(37, 36, 36),black);
+    width: 100vw;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.ViewSong .headings{
+    margin:20px 0px 30px 0px
+}
+.view-song-box{
+    width: 25%;
+    min-height: 300px;
+    padding: 10px;
+    background: rgb(32, 32, 32);
+    margin: 10px;
+    border-radius: 13px;
+}
+.view-song-box img{
+    width: 100%;
+    /* padding: 5px; */
+    border-radius: 20px;
+}
+.view-song-box audio{
+    width: 100%;
+    height: 40px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+.view-song-box h3,p{
+    margin: 0px;
+}
+.view-song-box p{
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+

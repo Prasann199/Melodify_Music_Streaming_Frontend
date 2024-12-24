@@ -1,0 +1,106 @@
+.SongByArtists{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.artists-songs{
+    width: 25%;
+    min-height: 300px;
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 13px;
+    margin: 10px;
+}
+.artists-songs img{
+    width: 100%;
+    border-radius: 20px;
+}
+.artists-songs audio{
+    width: 100%;
+    height: 35px;
+}
+.SongsByArtist-wrapper h1{
+    padding-top: 20vh;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.custom-card:hover{
+    background: rgb(28, 28, 28);
+}
+.row .index-by-artist {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    
+  }
+  
+  .custom-card {
+    width: 100%; /* Make card responsive */
+    max-width: 18rem; /* Restrict maximum width */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    transition: all ease 0.2s;
+  }
+  
+  .image-container {
+    width: 100%; /* Full width of card */
+    padding-top: 100%; /* Maintain square aspect ratio */
+    position: relative;
+    overflow: hidden; /* Crop image */
+    border-radius: 50%;
+  }
+  
+  .image-container img ,.image-container1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  .image-container1 {
+    width: 100%; /* Full width of card */
+    padding-top: 100%; /* Maintain square aspect ratio */
+    position: relative;
+    overflow: hidden; /* Crop image */
+    
+  }
+  .index-columns{
+    position: relative;
+  }
+  .overlay{
+    position: absolute;
+    display: none;
+    top: 60%;
+    left: 70%;
+    animation: lift;
+  }
+  .col-3:hover .overlay{
+    display: block;
+    z-index: 5;
+  }
+  .overlay img{
+    width: 3rem;
+    background-color: black;
+    border-radius: 50%;
+  }
+  @media (max-width:420px){
+    
+    .SongByArtists{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      overflow-y: scroll;
+      overflow-x: hidden;
+      gap: 1rem;
+    }
+    .col-3{
+      width: 400px;
+    }
+  }
